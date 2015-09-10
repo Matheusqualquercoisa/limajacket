@@ -1,19 +1,22 @@
-   	<section id="form">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 col-sm-offset-1">
-					<div class="login-form">
-						<h2>Login:</h2>
+<div class="container">
+			<div class="row" style="margin-left:200px;">
+				<div class="col-sm-6 col-sm-offset-1">
+				<br>
+				<br>
+				<br>
+						<div class="shopper-info">
 						<form role="form" action = "<?php echo base_url("Login/logar"); ?>" method= "post">
 							<input type="text" id="login" name="login" placeholder="Login" />
 							<input type="Password" id="senha" name="senha" class="form-control" placeholder="Senha" />
 							<span>
 								<a href="cliente" class="bul">Cadastre-se aqui</a>
 							</span>
-							<button type="submit" class="btn btn-justified btn-primary"> ENTRAR</button>
+							<br>
+							<br>
+							<button type="submit" class="btn btn-default cart" name="cadastrar">Entrar</button>
 						</form>
+						</div>
 					<!--/login form-->	
-					</div>
 					<?php if($this->session->flashdata('loginInvalido')): ?>
 						<script>
 							setTimeout(function(){
@@ -22,7 +25,7 @@
 						</script>
 						<div id="loginInvalido">
 							<font color="#FC5555"><?php echo $this->session->flashdata('loginInvalido'); ?></font>
-						</div>
+					</div>
 					<?php endif; ?>
 					<?php if($this->session->flashdata('loginVazio')): ?>
 						<script>
@@ -37,7 +40,6 @@
 				</div>
 			</div>
 		</div>
-	</section>
   <!--Footer--> 
   <div id="footer">
     <p class="left"> <a href="#">Inicio</a> <span>|</span> <a href="#">Contato</a> <span>|</span> <a href="#">Minha Conta</a> <span>|</span> <a href="#">Galeria</a> <span>|</span> <a href="#"> Trabalhe Conosco </a> </p>

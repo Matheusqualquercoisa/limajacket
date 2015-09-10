@@ -3,14 +3,14 @@
 <div class="shell">
   <!-- Header -->
   <div id="header">
-    <h1 id="logo"><a href="<?php echo base_url("Principal")?>" >Lima Jacket</a></h1>
-    <!-- Cart -->
+    <a href="<?php echo base_url("Principal")?>" >Lima Jacket</a>
     <div id="cart"> <a href="<?php echo base_url("Pedido")?>" class="cart-link">Carrinho</a>
       <div class="cl">&nbsp;</div>
       <?php 	if($this->cart->total_items()>0): ?>
       <span> Produto(s): <strong><?php echo $this->cart->total_items() ?></strong></span> &nbsp;&nbsp; </div>
       <?php else:  ?>
-      <span> Produto: <strong>0</strong></span> &nbsp;&nbsp; </div>
+      <span> Produto: <strong>0</strong></span> &nbsp;&nbsp; 
+  </div>
 		<?php endif;  ?>
 	  	
     <!-- End Cart -->

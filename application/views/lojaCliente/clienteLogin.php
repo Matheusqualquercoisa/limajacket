@@ -1,17 +1,15 @@
  <!-- <form action="<?php echo base_url("Principal/categoria"); ?>" method="post">-->
-	<section id="cart_items">
 		<div class="container">
-		<br><br><br>
 			<div class="shopper-informations">
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="shopper-info">
 							<p>1 Passo</p>&nbsp;&nbsp;&nbsp;&nbsp;<p>Cadastre seu Login</p> 
 							<form role="form" action = "<?php echo base_url("Cliente/Login"); ?>" method= "post">
 								<input type="text" id="login" name="login" placeholder="Login">
 								<input type="Password" id="senha" name="senha" class="form-control" placeholder="Senha">
 							
-							<button type="submit" class="btn btn-justified btn-primary"> Confirme</button>
+							<button type="submit" class="btn btn-default cart" name="cadastrar">Cadastrar</button>
 							<a class="btn btn-primary" href="">Limpar</a>
 							</form>
 						</div>
@@ -19,7 +17,6 @@
 				</div>
 			</div>
 		</div>
-	</section> <!--/#cart_items-->
   <!--Footer--> 
   <div id="footer">
     <p class="left"> <a href="#">Inicio</a> <span>|</span> <a href="#">Contato</a> <span>|</span> <a href="#">Minha Conta</a> <span>|</span> <a href="#">Galeria</a> <span>|</span> <a href="#"> Trabalhe Conosco </a> </p>
